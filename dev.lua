@@ -31,3 +31,17 @@ minetest.register_chatcommand("xcheck", {
         end
 	end,
 })
+
+minetest.register_chatcommand("whereis", {
+    params = "<player name>",
+    description = "get cords of player",
+    privs = {dev = true},
+    func = function(name, param)
+        if not minetest.get_player_by_name(param) then
+            return minetest.chat_send_player(name, param .. " is not online")
+        else
+            local player_pos = minetest.get_player_by_name(param):get_pos()
+            minetest.chat_send_player(name, param .. " is at " .. minetest.pos_to_string(player_pos, 0))
+        end
+    end
+})
