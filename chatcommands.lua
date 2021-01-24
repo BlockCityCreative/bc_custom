@@ -2,7 +2,7 @@
 --short commands--
 ------------------
 
-if minetest.get_modpath("areas") then 
+if minetest.get_modpath("areas") then
     minetest.register_chatcommand("a1", minetest.chatcommands["area_pos1"])
     minetest.register_chatcommand("a2", minetest.chatcommands["area_pos2"])
     minetest.register_chatcommand("p", minetest.chatcommands["protect"])
