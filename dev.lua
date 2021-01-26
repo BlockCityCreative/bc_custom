@@ -45,3 +45,18 @@ minetest.register_chatcommand("whereis", {
         end
     end
 })
+
+minetest.register_chatcommand('mute', {
+    description = "gives a fun reply",
+    params = '<player name>',
+    privs = {dev=true},
+    func = function (name, params)
+        if params == "" then
+            minetest.chat_send_player(name, "expected name")
+            return false
+        else
+            minetest.chat_send_all(params .. " shaddup mate")
+            return true
+        end
+    end
+})
