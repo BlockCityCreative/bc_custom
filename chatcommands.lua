@@ -32,7 +32,7 @@ minetest.register_chatcommand("visit", {
     func = function(name, param)
         if location[param] and minetest.get_player_by_name(name) then
             minetest.chat_send_player(name, "Teleporting to " .. param)
-            minetest.get_player_by_name(param):set_pos(location[param])
+            minetest.get_player_by_name(name):set_pos(location[param])
         elseif not minetest.get_player_by_name(name) then
             minetest.chat_send_player(name, "sorry, you do not appear to be in game")
         else
