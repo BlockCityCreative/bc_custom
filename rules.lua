@@ -72,4 +72,15 @@ minetest.register_chatcommand("info", {
 minetest.register_on_newplayer(function(ObjectRef)
     local pname = ObjectRef:get_player_name()
     minetest.show_formspec(pname, "bc_rules:rules_formspec", table.concat(formspec_it("rules_text", rules), ""))
+
+    --hack to make sure new players get interact
+    local function gi()
+        if minetest.get_player_by_name(pname) then
+            local privs = minetest.get_player_privs(pname)
+            privs["interact"] = true
+            minetest.set_player_privs(pname, privs)
+        end
+    end
+
+    minetest.after(0, gi)
 end)
