@@ -12,7 +12,7 @@ if minetest.get_modpath("catcommands") then
     minetest.register_chatcommand("v", minetest.chatcommands["vanish"])
 end
 
-if minetest.get_modpath("xban") then
+if minetest.get_modpath("xban2") then
     minetest.register_chatcommand("yeet", minetest.chatcommands["xban"])
 end
 
