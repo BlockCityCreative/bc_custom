@@ -4,6 +4,7 @@ local rules = {
     "No dating or roleplay,",
     "no all capitals messages,",
     "no spaming,",
+    "no swearing,",
     "English in public chat,",
     "No asking admins for privs,",
     "pinging more than twice may result in tempban,",
@@ -11,7 +12,7 @@ local rules = {
     "controversial topics(religon and politics) are banned,",
     ",",
     "rules are subject to change,",
-    "rules last updated: 8/19/2020,",
+    "rules last updated: 3/10/2022,",
     "see /info for more information",
 }
 
