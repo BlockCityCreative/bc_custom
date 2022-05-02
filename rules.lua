@@ -1,19 +1,19 @@
 local rules = {
-    "no griefing,",
+    "No griefing,",
     "Builds must be 40 blocks away from other builds,",
     "No dating or roleplay,",
-    "no all capitals messages,",
-    "no spaming,",
-    "no swearing,",
+    "No all capitals messages,",
+    "No spamming chat,",
+    "No swearing,",
     "English in public chat,",
     "No asking admins for privs,",
-    "pinging more than twice may result in tempban,",
-    "skybuilds/bases are not allowed,",
-    "controversial topics(religon and politics) are banned,",
+    "Pinging more than twice may result in tempban,",
+    "Skybuilds/bases are not allowed,",
+    "Controversial topics(Religion, politics, etc. ) are banned,",
     ",",
-    "rules are subject to change,",
-    "rules last updated: 3/10/2022,",
-    "see /info for more information",
+    "Rules are subject to change,",
+    "rules last updated: 5/1/2022,",
+    "See /info for more information",
 }
 
 local info = {
@@ -23,7 +23,7 @@ local info = {
     "Server issue tracker: https://github.com/BlockCityCreative/issue-tracker,",
     "Server mods at: https://github.com/BlockCityCreative,",
     "server github account: https://github.com/BlockCityCreative,",
-    "info last updated: 8/8/2020",
+    "Info last updated: 8/8/2020",
 }
 
 local function formspec_it(title, contents)
